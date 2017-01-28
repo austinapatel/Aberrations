@@ -1,0 +1,10 @@
+Austin Patel: 831
+John Dandy: 12
+Bob Smith: 10
+Carlos: 9
+Bean: 7
+Salamander: 5
+John Cena: 3
+Alpaca: 2
+Soup: 1
+Cactus: 0

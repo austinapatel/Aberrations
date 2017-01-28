@@ -1,0 +1,10 @@
+*.vs
+*.suo
+*.sln
+*.csproj
+Keystore/
+obj/
+Library/
+ProjectSettings/
+*.meta
+*.shader

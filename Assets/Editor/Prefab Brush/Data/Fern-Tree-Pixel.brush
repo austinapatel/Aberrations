@@ -1,0 +1,41 @@
+Layer Selection: Everything
+Brush Max Size: 34.22
+Brush Size: 24.2
+Fill Mode: True
+Fill Rate: 0.062
+
+Game Object: Assets/Prefabs/Fern.prefab
+Layer: Default
+Toggle: True
+Slider: 1
+Lock Orientation Toggle: False
+Random Rotation Toggle: True
+Random Rotation X: False
+Random Rotation Y: True
+Random Rotation Z: False
+Random Scale Toggle: True
+Random Scale Min: 0.5
+Random Scale Max: 1
+Fixed Rotation Toggle: True
+Fixed Rotation X: 90
+Fixed Rotation Y: 0
+Fixed Rotation Z: 0
+Depth: 0
+
+Game Object: Assets/Prefabs/Tree.prefab
+Layer: Default
+Toggle: True
+Slider: 1
+Lock Orientation Toggle: False
+Random Rotation Toggle: True
+Random Rotation X: False
+Random Rotation Y: True
+Random Rotation Z: False
+Random Scale Toggle: True
+Random Scale Min: 0.5
+Random Scale Max: 1.5
+Fixed Rotation Toggle: True
+Fixed Rotation X: 90
+Fixed Rotation Y: 0
+Fixed Rotation Z: 0
+Depth: 0
