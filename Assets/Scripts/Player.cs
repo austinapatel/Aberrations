@@ -130,6 +130,8 @@ public class Player : MonoBehaviour {
 
         quitGameStartPosition = quitGameButton.GetComponent<RectTransform>().position;
         quitGameButton.SetActive(true);
+
+        StartGame(); // disables start menu
     }
 
     public void StartGame()
@@ -174,7 +176,7 @@ public class Player : MonoBehaviour {
             if (!canvasManager.getIsMuted()) audioSource.UnPause();
             quitGameButton.SetActive(false);
             pausedTitle.SetActive(false);
-            pauseButton.transform.FindChild("Text").GetComponent<Text>().text = "pause";
+            pauseButton.transform.Find("Text").GetComponent<Text>().text = "pause";
         }
         else
         {
@@ -182,7 +184,7 @@ public class Player : MonoBehaviour {
             audioSource.Pause();
             quitGameButton.SetActive(true);
             pausedTitle.SetActive(true);
-            pauseButton.transform.FindChild("Text").GetComponent<Text>().text = "Unpause";
+            pauseButton.transform.Find("Text").GetComponent<Text>().text = "Unpause";
         }
     }
 
@@ -457,10 +459,10 @@ public class Player : MonoBehaviour {
 
         if (lives == 0)
         {
-            GameObject.Find("Player Light").SetActive(false);
-            GameObject outsideLight = GameObject.Find("Outside Light");
-            outsideLight.SetActive(true);
-            outsideLight.GetComponent<Light>().intensity = 1.0f;
+            //GameObject.Find("Player Light").SetActive(false);
+            //GameObject outsideLight = GameObject.Find("Outside Light");
+            //outsideLight.SetActive(true);
+            //outsideLight.GetComponent<Light>().intensity = 1.0f;
 
             saveScore();
             

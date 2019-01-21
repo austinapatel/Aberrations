@@ -215,17 +215,17 @@ public class PrefabBrushEditor : EditorWindow
             if (Event.current.button == 0 && !_altDown && !_ctrlDown)
                 switch (Event.current.type)
                 {
-                    case EventType.mouseDown:
+                    case EventType.MouseDown:
                         if (_brush.fillMode)
                             PlacePrefab();
                         break;
 
-                    case EventType.mouseDrag:
+                    case EventType.MouseDrag:
                         if (_brush.fillMode && Time.realtimeSinceStartup - _brush.timer >= _brush.rate)
                             PlacePrefab();
                         break;
 
-                    case EventType.mouseUp:
+                    case EventType.MouseUp:
                         if (!_brush.fillMode)
                         {
                             PlacePrefab();
@@ -234,7 +234,7 @@ public class PrefabBrushEditor : EditorWindow
                         break;
                 }
             else if (Event.current.button == 0 && _ctrlDown)
-                if (Event.current.type == EventType.mouseDown)
+                if (Event.current.type == EventType.MouseDown)
                     PlacePrecisionPrefab();
 
             if (Event.current.type == EventType.Layout)
@@ -244,11 +244,11 @@ public class PrefabBrushEditor : EditorWindow
         Vector2 mouse_pos = Event.current.mousePosition;
 
         if (_precision.transform != null)
-            if (Event.current.type == EventType.mouseUp ||
+            if (Event.current.type == EventType.MouseUp ||
                 mouse_pos.x > Screen.width + 50 || mouse_pos.x < -50 ||
                 mouse_pos.y > Screen.height + 50 || mouse_pos.y < -50)
                 ReleasePrecisionPrefab();
-            else if (Event.current.type == EventType.keyUp && Event.current.keyCode == KeyCode.Space)
+            else if (Event.current.type == EventType.KeyUp && Event.current.keyCode == KeyCode.Space)
                 ItteratePrecisionPrefab();
             else
                 UpdatePrecisionPrefab();

@@ -42,7 +42,7 @@ public class CanvasManager : MonoBehaviour {
         else
         {
             isMuted = true;
-            muteButton.transform.FindChild("Text").GetComponent<Text>().text = "Unmute";
+            muteButton.transform.Find("Text").GetComponent<Text>().text = "Unmute";
         }
     }
 
@@ -51,7 +51,7 @@ public class CanvasManager : MonoBehaviour {
         if (helpEnabled)
         {
             helpEnabled = false;
-            helpButton.transform.FindChild("Text").GetComponent<Text>().text = "Help";
+            helpButton.transform.Find("Text").GetComponent<Text>().text = "Help";
             helpContent.SetActive(false);
             startButton.SetActive(true);
             settings.SetActive(true);
@@ -60,7 +60,7 @@ public class CanvasManager : MonoBehaviour {
         else
         {
             helpEnabled = true;
-            helpButton.transform.FindChild("Text").GetComponent<Text>().text = "Back";
+            helpButton.transform.Find("Text").GetComponent<Text>().text = "Back";
             helpContent.SetActive(true);
             startButton.SetActive(false);
             settings.SetActive(false);
@@ -72,7 +72,7 @@ public class CanvasManager : MonoBehaviour {
     {
         if (settingsEnabled)
         {
-            settings.transform.FindChild("Text").GetComponent<Text>().text = "Settings";
+            settings.transform.Find("Text").GetComponent<Text>().text = "Settings";
             startButton.SetActive(true);
             title.GetComponent<Text>().text = "Aberrations";
             muteButton.SetActive(false);
@@ -83,7 +83,7 @@ public class CanvasManager : MonoBehaviour {
         {
             settingsEnabled = true;
             startButton.SetActive(false);
-            settings.transform.FindChild("Text").GetComponent<Text>().text = "Back";
+            settings.transform.Find("Text").GetComponent<Text>().text = "Back";
             title.GetComponent<Text>().text = "Settings";
             muteButton.SetActive(true);
             helpButton.SetActive(false);
@@ -103,13 +103,13 @@ public class CanvasManager : MonoBehaviour {
         {
             backgroundMusic.Pause();
             PlayerPrefs.SetInt("muted", 1);
-            muteButton.transform.FindChild("Text").GetComponent<Text>().text = "Unmute";
+            muteButton.transform.Find("Text").GetComponent<Text>().text = "Unmute";
         }
         else
         {
             backgroundMusic.UnPause();
             PlayerPrefs.SetInt("muted", 0);
-            muteButton.transform.FindChild("Text").GetComponent<Text>().text = "Mute";
+            muteButton.transform.Find("Text").GetComponent<Text>().text = "Mute";
         }
     }
 

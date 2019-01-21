@@ -13,8 +13,8 @@ public class Door : MonoBehaviour {
     private bool opened;
 
 	void Start () {
-        leftDoor = transform.FindChild("Left").gameObject;
-        rightDoor = transform.FindChild("Right").gameObject;
+        leftDoor = transform.Find("Left").gameObject;
+        rightDoor = transform.Find("Right").gameObject;
 
         moveDistance = gameObject.transform.localScale.y;
         movePerFrame = moveDistance / doorOpenDuration;

@@ -53,7 +53,7 @@ public class Enemy : MonoBehaviour
         else if (type == Types.Surviellance)
         {
             shootPosition = new Vector3(transform.position.x, transform.position.y - transform.localScale.y / 2, transform.position.z);
-            laser = gameObject.transform.FindChild("Laser").gameObject;
+            laser = gameObject.transform.Find("Laser").gameObject;
 
             startLaserRotation = gameObject.transform.rotation.eulerAngles.z - laserRotation / 2;
             if (startLaserRotation < 0) startLaserRotation += 360;
@@ -63,7 +63,7 @@ public class Enemy : MonoBehaviour
             curLaserRotation = gameObject.transform.rotation.eulerAngles.z;
 
             spriteRenderer = GetComponent<SpriteRenderer>();
-            childRenderer = transform.FindChild("Laser").GetComponent<SpriteRenderer>();
+            childRenderer = transform.Find("Laser").GetComponent<SpriteRenderer>();
             boxCollider = gameObject.GetComponent<BoxCollider2D>();
         }
 
