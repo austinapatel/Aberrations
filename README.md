@@ -9,3 +9,7 @@ alt="Get it on Google Play!" width="200px" />
 </a>
 
 <sub><sup>Google Play and the Google Play logo are trademarks of Google Inc.</sup></sub>
+
+<img src="Screenshots/1.png" width="100%" />
+<img src="Screenshots/2.png" width="100%" />
+
